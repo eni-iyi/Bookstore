@@ -2,6 +2,8 @@ const express = require("express");
 const app = express();
 require("colors");
 const DbConnect = require("./config/Db");
+const dotenv = require("dotenv");
+dotenv.config();
 
 const port = process.env.port || 4000;
 
